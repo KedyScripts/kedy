@@ -1,0 +1,65 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gipkz/kedi/main/special%20hub", true))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "Kedy hub sus",Name = "Kedy Produr fare ve kopke mall", HidePremium = false, SaveConfig = true, ConfigFolder = "Cathe is impostor sussy among us ur under fbi s3x oh mey gad"})
+
+--Value lar
+_G.EA = false
+
+--function lar
+function EA()
+    while _G.EA == true do
+
+local ohString1 = "Supermarket Egg"
+local ohString2 = "tripleEgg"
+
+workspace.__THINGS.__REMOTES.buyEgg:InvokeServer(ohString1, ohString2)
+
+local ohInstance1 = game:GetService("Players").LocalPlayer.PlayerGui
+
+workspace.__THINGS.__REMOTES.confirmSellPetToMerchant:InvokeServer(ohInstance1)
+
+local ohString1 = "Butter"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Sugar"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Flour"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Rice"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Milk"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohString1 = "Egg"
+
+workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
+
+local ohInstance1 = game:GetService("Players").LocalPlayer
+
+workspace.__THINGS.__REMOTES.rebirth:InvokeServer(ohInstance1)
+end
+end
+local FarmTab = Window:MakeTab({
+	Name = "Kedi Bak",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+FarmTab:AddToggle({
+	Name = "mor coin kasma",
+	Default = false,
+	Callback = function(Value)
+_G.EA = Value 
+EA() 
+    end
+})
+OrionLib:Init()
+
+task.wait(2)
